@@ -6,8 +6,11 @@ import pandas as pd
 
 from src.predict import predict_week  # local import
 
+import os, time
+st.write(f"App file: `{__file__}` • CWD: `{os.getcwd()}` • Loaded: {time.strftime('%H:%M:%S')}")
+
 st.set_page_config(page_title="NFL Predictor", layout="wide")
-st.title("🏈 NFL Score & Probabilities")
+st.title("🏈 NFL Score & Probabilities by Walid Hardan")
 st.caption("Demo: nflverse + simple Ridge features + Poisson sims")
 
 with st.sidebar:
